@@ -1,0 +1,13 @@
+<h1>
+  {{title}}
+  <ul id='movie-list'>
+    <li *ngFor="let movie of movies">
+      <span>{{movie.title}}</span> 
+      <ul>
+        <li *ngFor="let tag of movie.tags">
+          {{tag}}
+        </li>
+      </ul>
+    </li>
+  </ul>
+</h1>
